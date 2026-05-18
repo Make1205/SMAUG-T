@@ -1,0 +1,32 @@
+name: clang-format
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  format:
+    runs-on: [ self-hosted, no-gpu ]
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Run clang-format for reference implementation
+      run: |
+        find reference_implementation -name '*.c' -o -name '*.cpp' -o -name '*.h' -o -name '*.hpp' | xargs clang-format -i
+
+    - name: Run clang-format for optimized implementation
+      run: |
+        find optimized_implementation -name '*.c' -o -name '*.cpp' -o -name '*.h' -o -name '*.hpp' | xargs clang-format -i
+
+    - name: Check for changes
+      run: |
+        if [[ -n $(git status --porcelain) ]]; then
+          echo "Formatting changes detected. Please run clang-format on your code."
+          git diff
+          exit 1
+        else
+          echo "No formatting changes needed"
+        fi

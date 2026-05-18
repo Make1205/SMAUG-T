@@ -1,0 +1,9 @@
+.DS_Store
+/.cache/
+/.vscode/
+/build/
+/reference_implementation/.cache/
+/reference_implementation/build/
+/optimized_implementation/.cache/
+/optimized_implementation/build/
+/tmp/
