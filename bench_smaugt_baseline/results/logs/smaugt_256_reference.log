@@ -1,0 +1,18 @@
+Target: SMAUG-T256 reference (mode5)
+Official build log: bench_smaugt_baseline/results/logs/reference_cmake_build.log
+Skip seed generation.
+KAT response matches bundled response
+Benchmark compile command: /usr/bin/cc -O3 -std=c11 -DSMAUGT_CONFIG_MODE=SMAUGT_MODE5 -I SMAUG-T-1.2.0/reference_implementation/include bench_smaugt_baseline/bench_smaugt_kem.c -L bench_smaugt_baseline/results/build/cmake_reference/lib -Wl\,-rpath\,/workspace/SMAUG-T/bench_smaugt_baseline/results/build/cmake_reference/lib -lsmaugt-mode5 -o bench_smaugt_baseline/results/build/bench_smaugt_mode5_reference
+Benchmark run command: bench_smaugt_baseline/results/build/bench_smaugt_mode5_reference 1000
+alg=smaugt_mode5
+q=2048
+pk_bytes=1440
+ct_bytes=1376
+sk_bytes=1728
+ss_bytes=32
+iterations=1000
+KG_kCycles=270.524
+Enc_kCycles=233.834
+Dec_kCycles=281.733
+timing_method=rdtsc_lfence_median
+correctness_status=pass

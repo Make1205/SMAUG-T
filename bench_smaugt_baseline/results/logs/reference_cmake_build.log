@@ -1,0 +1,134 @@
+Reference source root: SMAUG-T-1.2.0/reference_implementation
+Clean: rm -rf bench_smaugt_baseline/results/build/cmake_reference
+Configure command: /usr/bin/cmake -S SMAUG-T-1.2.0/reference_implementation -B bench_smaugt_baseline/results/build/cmake_reference -DCMAKE_BUILD_TYPE=Release -DSMAUGT_BUILD_TEST=OFF
+-- The C compiler identification is GNU 13.3.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.13")  
+-- Configuring done (0.5s)
+-- Generating done (0.0s)
+-- Build files have been written to: /workspace/SMAUG-T/bench_smaugt_baseline/results/build/cmake_reference
+Build command: /usr/bin/cmake --build bench_smaugt_baseline/results/build/cmake_reference --config Release --parallel
+[  1%] Building C object CMakeFiles/smaugt_rng.dir/src/randombytes.c.o
+[  2%] Building C object CMakeFiles/smaugt_fips202.dir/src/fips202.c.o
+[  2%] Built target smaugt_rng
+[  2%] Built target smaugt_fips202
+[  3%] Building C object CMakeFiles/smaugt-mode5.dir/src/dg.c.o
+[  5%] Building C object CMakeFiles/smaugt-mode5.dir/src/hash.c.o
+[  4%] Building C object CMakeFiles/smaugt-mode1.dir/src/cbd.c.o
+[  4%] Building C object CMakeFiles/smaugt-mode3.dir/src/hwt.c.o
+[  7%] Building C object CMakeFiles/smaugt-mode3.dir/src/hash.c.o
+[ 10%] Building C object CMakeFiles/smaugt-mode1.dir/src/ciphertext.c.o
+[  8%] Building C object CMakeFiles/smaugt-mode5.dir/src/key.c.o
+[  6%] Building C object CMakeFiles/smaugt-mode3.dir/src/cbd.c.o
+[ 10%] Building C object CMakeFiles/smaugt-mode5.dir/src/ciphertext.c.o
+[  9%] Building C object CMakeFiles/smaugt-mode3.dir/src/ciphertext.c.o
+[ 13%] Building C object CMakeFiles/smaugt-mode3.dir/src/key.c.o
+[ 14%] Building C object CMakeFiles/smaugt-mode5.dir/src/hwt.c.o
+[ 15%] Building C object CMakeFiles/smaugt-mode5.dir/src/cbd.c.o
+[ 16%] Building C object CMakeFiles/smaugt-mode3.dir/src/indcpa.c.o
+[ 19%] Building C object CMakeFiles/smaugt-mode3.dir/src/toomcook.c.o
+[ 11%] Building C object CMakeFiles/smaugt-mode1.dir/src/hash.c.o
+[ 12%] Building C object CMakeFiles/smaugt-mode5.dir/src/indcpa.c.o
+[ 20%] Building C object CMakeFiles/smaugt-mode5.dir/src/packring.c.o
+[ 21%] Building C object CMakeFiles/smaugt-mode5.dir/src/kem.c.o
+[ 25%] Building C object CMakeFiles/smaugt-mode3.dir/src/dg.c.o
+[ 26%] Building C object CMakeFiles/smaugt-mode1.dir/src/hwt.c.o
+[ 27%] Building C object CMakeFiles/smaugt-mode3.dir/src/pack.c.o
+[ 17%] Building C object CMakeFiles/smaugt-mode1.dir/src/dg.c.o
+[ 18%] Building C object CMakeFiles/smaugt-mode3.dir/src/packring.c.o
+[ 24%] Building C object CMakeFiles/smaugt-mode5.dir/src/pack.c.o
+[ 28%] Building C object CMakeFiles/smaugt-mode5.dir/src/poly.c.o
+[ 28%] Building C object CMakeFiles/smaugt-mode3.dir/src/kem.c.o
+[ 28%] Building C object CMakeFiles/smaugt-mode5.dir/src/toomcook.c.o
+[ 30%] Building C object CMakeFiles/smaugt-mode1.dir/src/key.c.o
+[ 29%] Building C object CMakeFiles/smaugt-mode3.dir/src/verify.c.o
+[ 35%] Building C object CMakeFiles/smaugt-mode1.dir/src/verify.c.o
+[ 32%] Building C object CMakeFiles/smaugt-mode5.dir/src/verify.c.o
+[ 31%] Building C object CMakeFiles/smaugt-mode1.dir/src/kem.c.o
+[ 34%] Building C object CMakeFiles/smaugt-mode1.dir/src/indcpa.c.o
+[ 33%] Building C object CMakeFiles/smaugt-mode1.dir/src/poly.c.o
+[ 36%] Building C object CMakeFiles/smaugt-mode1.dir/src/pack.c.o
+[ 38%] Building C object CMakeFiles/smaugt-mode3.dir/src/poly.c.o
+[ 37%] Building C object CMakeFiles/smaugt-modet.dir/src/cbd.c.o
+[ 41%] Building C object CMakeFiles/smaugt-modet.dir/src/dg.c.o
+[ 40%] Building C object CMakeFiles/smaugt-mode1.dir/src/packring.c.o
+[ 39%] Building C object CMakeFiles/smaugt-mode1.dir/src/toomcook.c.o
+[ 42%] Building C object CMakeFiles/smaugt-modet.dir/src/ciphertext.c.o
+[ 43%] Building C object CMakeFiles/smaugt-modet.dir/src/hwt.c.o
+[ 45%] Building C object CMakeFiles/smaugt-modet.dir/src/toomcook.c.o
+[ 44%] Building C object CMakeFiles/smaugt-modet.dir/src/hash.c.o
+[ 46%] Building C object CMakeFiles/smaugt-modet.dir/src/key.c.o
+[ 47%] Building C object CMakeFiles/smaugt-modet.dir/src/kem.c.o
+[ 48%] Building C object CMakeFiles/smaugt-modet.dir/src/indcpa.c.o
+[ 49%] Building C object CMakeFiles/smaugt-modet.dir/src/pack.c.o
+[ 50%] Building C object CMakeFiles/smaugt-modet.dir/src/packring.c.o
+[ 51%] Building C object CMakeFiles/smaugt-modet.dir/src/poly.c.o
+[ 52%] Building C object CMakeFiles/smaugt-modet.dir/src/verify.c.o
+[ 53%] Linking C shared library lib/libsmaugt-mode1.so
+[ 54%] Linking C shared library lib/libsmaugt-mode5.so
+[ 55%] Linking C shared library lib/libsmaugt-mode3.so
+[ 56%] Linking C shared library lib/libsmaugt-modet.so
+[ 56%] Built target smaugt-mode5
+[ 56%] Built target smaugt-mode3
+[ 56%] Built target smaugt-mode1
+[ 57%] Building C object benchmark/CMakeFiles/smaugt-mode5-benchmark.dir/PQC_bench.c.o
+[ 58%] Building C object benchmark/CMakeFiles/smaugt-mode5-speed.dir/speed_print.c.o
+[ 59%] Building C object benchmark/CMakeFiles/smaugt-mode5-benchmark.dir/__/src/randombytes.c.o
+[ 60%] Building C object benchmark/CMakeFiles/smaugt-mode5-speed.dir/speed.c.o
+[ 62%] Building C object kat/CMakeFiles/smaugt-mode5-kat.dir/kat_kem.c.o
+[ 61%] Building C object benchmark/CMakeFiles/smaugt-mode5-speed.dir/cpucycles.c.o
+[ 63%] Building C object kat/CMakeFiles/smaugt-mode5-kat.dir/rng.c.o
+[ 64%] Building C object kat/CMakeFiles/smaugt-mode5-kat.dir/PQCgenKAT_kem.c.o
+[ 65%] Building C object kat/CMakeFiles/smaugt-mode3-kat.dir/PQCgenKAT_kem.c.o
+[ 66%] Building C object kat/CMakeFiles/smaugt-mode3-kat.dir/rng.c.o
+[ 67%] Building C object kat/CMakeFiles/smaugt-mode3-kat.dir/kat_kem.c.o
+[ 69%] Building C object kat/CMakeFiles/smaugt-mode1-kat.dir/rng.c.o
+[ 68%] Building C object kat/CMakeFiles/smaugt-mode1-kat.dir/PQCgenKAT_kem.c.o
+[ 69%] Built target smaugt-modet
+[ 72%] Building C object benchmark/CMakeFiles/smaugt-mode3-speed.dir/speed_print.c.o
+[ 73%] Building C object benchmark/CMakeFiles/smaugt-mode3-speed.dir/cpucycles.c.o
+[ 71%] Building C object benchmark/CMakeFiles/smaugt-mode1-speed.dir/speed_print.c.o
+[ 74%] Building C object benchmark/CMakeFiles/smaugt-mode3-benchmark.dir/PQC_bench.c.o
+[ 70%] Building C object benchmark/CMakeFiles/smaugt-mode1-benchmark.dir/PQC_bench.c.o
+[ 76%] Building C object kat/CMakeFiles/smaugt-mode1-kat.dir/kat_kem.c.o
+[ 77%] Building C object benchmark/CMakeFiles/smaugt-mode1-benchmark.dir/__/src/randombytes.c.o
+[ 75%] Building C object benchmark/CMakeFiles/smaugt-mode3-speed.dir/speed.c.o
+[ 78%] Building C object benchmark/CMakeFiles/smaugt-mode3-benchmark.dir/__/src/randombytes.c.o
+[ 80%] Building C object benchmark/CMakeFiles/smaugt-mode1-speed.dir/cpucycles.c.o
+[ 79%] Building C object benchmark/CMakeFiles/smaugt-mode1-speed.dir/speed.c.o
+[ 81%] Building C object kat/CMakeFiles/smaugt-modet-kat.dir/PQCgenKAT_kem.c.o
+[ 82%] Building C object kat/CMakeFiles/smaugt-modet-kat.dir/kat_kem.c.o
+[ 83%] Building C object kat/CMakeFiles/smaugt-modet-kat.dir/rng.c.o
+[ 86%] Linking C executable ../bin/smaugt-mode5-benchmark
+[ 84%] Building C object benchmark/CMakeFiles/smaugt-modet-speed.dir/cpucycles.c.o
+[ 87%] Linking C executable ../bin/smaugt-mode5-speed
+[ 85%] Building C object benchmark/CMakeFiles/smaugt-modet-speed.dir/speed.c.o
+[ 88%] Building C object benchmark/CMakeFiles/smaugt-modet-speed.dir/speed_print.c.o
+[ 89%] Building C object benchmark/CMakeFiles/smaugt-modet-benchmark.dir/__/src/randombytes.c.o
+[ 90%] Building C object benchmark/CMakeFiles/smaugt-modet-benchmark.dir/PQC_bench.c.o
+[ 91%] Linking C executable ../bin/smaugt-mode3-benchmark
+[ 92%] Linking C executable ../bin/smaugt-mode3-speed
+[ 93%] Linking C executable ../bin/smaugt-mode1-benchmark
+[ 94%] Linking C executable ../bin/smaugt-mode1-speed
+[ 95%] Linking C executable ../bin/smaugt-modet-speed
+[ 95%] Built target smaugt-mode5-speed
+[ 96%] Linking C executable ../bin/smaugt-modet-benchmark
+[ 96%] Built target smaugt-mode5-benchmark
+[ 97%] Linking C executable ../bin/smaugt-mode3-kat
+[ 98%] Linking C executable ../bin/smaugt-mode5-kat
+[ 98%] Built target smaugt-mode1-benchmark
+[ 99%] Built target smaugt-mode3-benchmark
+[ 99%] Linking C executable ../bin/smaugt-mode1-kat
+[ 99%] Built target smaugt-mode1-speed
+[ 99%] Built target smaugt-mode3-speed
+[100%] Linking C executable ../bin/smaugt-modet-kat
+[100%] Built target smaugt-modet-speed
+[100%] Built target smaugt-modet-benchmark
+[100%] Built target smaugt-mode3-kat
+[100%] Built target smaugt-mode5-kat
+[100%] Built target smaugt-mode1-kat
+[100%] Built target smaugt-modet-kat
