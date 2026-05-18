@@ -1,0 +1,18 @@
+Target: SMAUG-T128 reference (mode1)
+Official build log: bench_smaugt_baseline/results/logs/reference_cmake_build.log
+Skip seed generation.
+KAT response matches bundled response
+Benchmark compile command: /usr/bin/cc -O3 -std=c11 -DSMAUGT_CONFIG_MODE=SMAUGT_MODE1 -I SMAUG-T-1.2.0/reference_implementation/include bench_smaugt_baseline/bench_smaugt_kem.c -L bench_smaugt_baseline/results/build/cmake_reference/lib -Wl\,-rpath\,/workspace/SMAUG-T/bench_smaugt_baseline/results/build/cmake_reference/lib -lsmaugt-mode1 -o bench_smaugt_baseline/results/build/bench_smaugt_mode1_reference
+Benchmark run command: bench_smaugt_baseline/results/build/bench_smaugt_mode1_reference 1000
+alg=smaugt_mode1
+q=1024
+pk_bytes=672
+ct_bytes=672
+sk_bytes=832
+ss_bytes=32
+iterations=1000
+KG_kCycles=75.318
+Enc_kCycles=70.950
+Dec_kCycles=94.420
+timing_method=rdtsc_lfence_median
+correctness_status=pass

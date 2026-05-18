@@ -1,0 +1,12 @@
+alg=smaugt_mode1
+q=1024
+pk_bytes=672
+ct_bytes=672
+sk_bytes=832
+ss_bytes=32
+iterations=1000
+KG_kCycles=75.318
+Enc_kCycles=70.950
+Dec_kCycles=94.420
+timing_method=rdtsc_lfence_median
+correctness_status=pass

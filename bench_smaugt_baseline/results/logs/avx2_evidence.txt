@@ -1,0 +1,1 @@
+100:search_evidence '(-mavx2|-maes|-mbmi2|-mpclmul|-msse2avx|-march=native|immintrin\.h|__m256i|_mm256_)' . > "$AVX_EVIDENCE_FILE"
